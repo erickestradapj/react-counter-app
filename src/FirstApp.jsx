@@ -1,9 +1,9 @@
-export const FirstApp = () => {
+export const FirstApp = ({ title, subtitle }) => {
    return (
       <>
-         <h1>Erick</h1>
+         <h1>{title}</h1>
          {/* <code>{JSON.stringify(newMessage)}</code> */}
-         <p>I'm subtitle</p>
+         <p>{subtitle}</p>
       </>
    );
 };
