@@ -5,4 +5,9 @@ describe('Test in 11-async-await.js', () => {
       const url = await getImage();
       expect(typeof url).toBe('string');
    });
+
+   test('getImage should return error if API_KEY is invalid ', async () => {
+      const res = await getImage();
+      expect(res).toBe('Image not found');
+   });
 });
