@@ -3,8 +3,9 @@ import PropTypes from 'prop-types';
 export const FirstApp = ({ title, subtitle, name }) => {
    return (
       <>
-         <h1> {title} </h1>
+         <span data-testid="test-title"> {title} </span>
          {/* <code>{JSON.stringify(newMessage)}</code> */}
+         <p>{subtitle}</p>
          <p>{subtitle}</p>
          <p>{name}</p>
       </>
